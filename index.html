@@ -77,19 +77,74 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
         margin: 0;
         padding: 4px;
         width: 100%;
-        height: 38px;
+        min-height: 38px;
         text-align: left;
     }
-    .lgo__head a, .lgo__head h1 {
-        margin: 2px;
+    .lgo__head a {
+        margin: 6px 4px 0 6px;
+    }
+    .lgo__head img {
+        margin: 6px 4px 0 6px;
+    }
+    .lgo__head h1 {
         padding: 2px;
         font-size: 14px;
         font-weight: 100;
+        margin: 2px 2px 4px 38px;
     }
-    .lgo__head h1 {
-        margin-left: 38px;
+    .nav__primary {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax( 176px, 1fr ) );
+        background: linear-gradient(to bottom, #5cabdc 0%,#3c8bbc 76%);
+        user-select: none;
     }
-    .
+    .nav__primary a {
+        color: #fff;
+        background: linear-gradient(to bottom, #5cabdc 0%,#3c8bbc 76%);
+        border-right: solid 1px #fff;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 1.6;
+        margin: 0;
+        padding: 4px 16px;
+        text-align: center;
+    }
+    .nav__primary a:hover {
+        background: linear-gradient(to bottom, #3c8bbc 0%,#5cabdc 76%);
+    }
+    .nav__primary a[data-wlt-nav-state|=active]  {
+        background: linear-gradient(to bottom, #ffe21b 0%,#eec200 76%);
+        color: #082a59;
+    }
+    .nav__primary a[data-wlt-nav-state|=active]:hover  {
+        background: linear-gradient(to bottom, #eec200 0%,#ffe21b 76%);
+    }
+
+    .nav__primary--cont {
+        padding: 8px;
+        margin: 4px;
+    }
+    .nav__primary--cont section:not( [data-wlt-nav-state|=active] ) {
+        display: none;
+    }
+    .nav__primary--cont aside {
+        border: solid 1px #ddd;
+        border-radius: 6px 24px;
+        margin: 0;
+        padding: 0 4px;
+    }
+    .main-cols__grid {
+        display: grid;
+        grid-template-columns: 66% 1fr;
+    }
+    .find-a-studio {
+        display: block;
+        background-image: linear-gradient(to bottom, #f1f1f1 0%,#dcdddd 76%);
+        border-radius: 6px 24px;
+        padding: 4px 24px;
+        margin: 76px 16px 4px 4px;
+    }
+
     @media only screen and (max-width:48em)
     {
         .lgo__head {
@@ -105,7 +160,7 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
         <main>
             <header class="lgo__head">
                 <a href="index.html" aria-label="Home">
-                    <svg version="1" xmlns="http://www.w3.org/2000/svg" width="224" height="32"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#FEFEFE" d="M202 32c-61.595 0-123.189-.042-184.783.105-3.683.009-4.467-.835-4.314-4.384.321-7.477.256-14.983.016-22.466-.089-2.772.535-3.36 3.323-3.337C35.05 2.075 53.862 2 72.674 2c44.947 0 89.896.093 134.842-.137 4.722-.024 6.484.958 5.508 5.645-.167.798-.024 1.659-.024 2.492-1.225 1.167-2.752 1.301-4.323 1.279-4.198-1.211-7.874.165-11.389 2.325a3.42 3.42 0 0 1-1.369-.225c-2.15-2.117-4.795-2.681-7.595-1.962-3.202.821-1.691 1.929.016 2.894.595.427.987.956.882 1.736-.481.898-1.324 1.453-2.024 2.145-.972.959-1.831 2.024-1.313 3.477.598 1.676 2.071 2.018 3.635 1.927 2.157-.125 4.281.006 6.387.484.448.147.846.385 1.206.689-.499 3.846 3.82 4.441 4.887 7.231z"/><path fill="#797B7B" d="M197.2 13.104c2.78-3.801 6.58-4.042 10.727-3.075 1.238 1.163 4.127-.407 4.209 1.465.115 2.642-.598 5.505-2.583 7.66-1.034 1.121-2.393 1.685-3.917 1.79-.311.019-.63.029-.95.035.004.063.05.023.072.025 1.593.124 3.179-.422 4.783-.052 3.155.76 3.021 3.222 2.937 5.658-.546 5.383-5.242 4.24-8.478 5.39h-2c-.8-1.688-2.637-.935-3.901-1.644-2.661-1.493-2.261-3.271-.903-5.322.03-3.976-1.646-7.954.004-11.93z"/><path fill="#F7F7F7" d="M205.065 20.154c5.446-.395 4.728-5.609 6.761-8.705-.936-1.401-2.849-.258-3.899-1.42L213 10v17c-.283.47-.568.493-.854.003.159-2.488-.227-4.645-3.185-5.235-1.096-1.028-3.474 1.042-3.896-1.614z"/><path fill="#F7F7F7" d="M212.146 27.003L213 27c.897 4.23-.758 5.836-5.007 5.037-1.288-.241-2.66-.037-3.993-.037 2.722-1.655 6.632-1.373 8.146-4.997z"/><path fill="#082B59" d="M102.362 17.426c0-1.827.037-3.655-.011-5.48-.048-1.83 1.183-2.685 2.483-1.997 1.865.986 3.349-.04 4.987-.042 3.699-.005 7.304.917 11.122-.16 2.08-.587 3.638 1.656 3.836 3.758.295 3.129.134 6.303.155 9.457.008 1.149-.437 1.832-1.727 1.892-1.459.066-2.16-.494-2.15-1.979.016-2.491-.035-4.982-.012-7.474.018-1.772-.73-3.049-2.555-2.895-1.508.128-2.846.931-2.83 2.862.019 2.491-.018 4.983-.031 7.474-.008 1.459-.767 2.022-2.193 2.014-1.468-.01-1.526-1.014-1.546-2.009-.048-2.491.024-4.984-.062-7.474-.057-1.652-.77-3.036-2.668-2.822-1.513.171-2.919.888-2.953 2.781-.041 2.325.021 4.652-.041 6.976-.028 1.082.267 2.437-1.533 2.539-1.786.102-2.309-.86-2.278-2.438.032-1.66.007-3.322.007-4.983z"/><path fill="#062958" d="M48.392 18.249l4.069-8.843 4.178 8.862c2.024-2.132 2.25-4.718 3.275-6.905.513-1.095 1.167-1.727 2.231-1.187 1.146.582.046 1.438-.17 2.019a210.38 210.38 0 0 1-4.077 10.144c-.419.969-.457 2.584-1.972 2.487-1.386-.088-1.437-1.623-1.922-2.611-.796-1.623-1.516-3.283-2.286-4.967-2.223 2.311-1.869 7.421-4.541 7.192-2.688-.229-2.946-4.975-4.306-7.717-1.021-2.058-1.863-4.205-2.892-6.556 6.77-1.235 4.882 5.659 8.413 8.082z"/><path fill="#4C9BCB" d="M161.988 15.045c-1.249-5.618 2.901-5.013 6.186-5.31 1.88-.17 3.492.576 4.845 1.881l-.05-.113c.027 2.156-.047 4.319.104 6.467.287 4.098.648 7.766-5.645 6.848-2.295-.335-4.687.361-6.046-2.052-1.308-2.321.219-4.077 1.621-5.761.583-1.57 2.569-1.433 3.637-3.222-1.609 1.443-2.925 2.482-4.652 1.262z"/><path fill="#7C7E7E" d="M187.897 14.948c-1.319.245-2.752.643-3.221-1.207-.318-1.26.326-2.193 1.339-2.948 2.978-2.222 7.932-1.175 10.155 2.177.507 3.991 1.878 8.011-.402 11.907-1.802.498-3.473-.919-5.351-.243-2.681.966-5.291.386-6.271-2.363-1.004-2.813 1.087-4.622 3.399-5.937.432-.246.91-.408 1.367-.609.335-.671.896-1.249.862-2.089-.784.227-1.215.935-1.877 1.312z"/><path fill="#4999CB" d="M160.096 19.191c-2.176 4.31-4.912 6.861-9.607 5.338-3.836-1.244-5.897-5.84-4.576-9.769 1.386-4.122 4.465-5.469 8.581-4.936 1.755.228 3.105 1.122 4.058 2.571.632.961 1.471 2.16.763 3.165-.408.58-1.77.566-2.719.667-.982.104-1.992-.053-2.976.043-1.398.137-3.266-.696-3.978 1.075-.403 1.003.327 2.253 1.185 3.11 1.278 1.28 2.698 1.631 4.519 1.04 1.552-.504 2.041-2.701 4.75-2.304z"/><path fill="#7C7E7E" d="M172.969 11.503l.051.112c.53-2.618 3.713-3.103 4.481-5.741.371-1.271 2.01-1.2 2.236.575.213 1.664.025 3.335 2.357 3.658.585.081.754.793.261 1.532-3.541 5.308-3.537 6.123.092 10.469.794.95.188 1.449-.391 1.976-2.169 1.968-5.602.875-6.009-2.069-.315-2.277-.31-4.646-.083-6.938.24-2.419-.955-3.258-2.995-3.574z"/><path fill="#072A58" d="M135.011 15.975c2.474 2.066 4.676 4.512 1.677 7.442-2.516 2.459-5.767 2.28-8.71.239-.795-.551-1.698-1.346-.78-2.409.697-.807 1.425-.217 2.135.294 1.323.952 3.217 2.55 4.284.735 1.419-2.412-1.452-2.729-2.883-3.559-2.061-1.194-4.234-2.353-3.828-5.217.223-1.571.554-3.173 2.737-3.573 2.839-.521 5.271-.27 7.051 2.225.084.118-.441.67-.683 1.021-.807.79-1.994.161-2.891.726.532.832 1.356 1.324 1.891 2.076z"/><path fill="#10325E" d="M73.813 13.842c-.004 2.977-.007 5.954-.003 8.93.002 1.401-.601 2.078-2.089 2.108-1.7.034-1.817-1.023-1.818-2.246-.004-5.788.017-11.576-.007-17.364-.006-1.69.948-2.46 2.442-2.435 1.702.028 1.463 1.456 1.473 2.573.023 2.811.007 5.623.002 8.434z"/><path fill="#4E9CCC" d="M143.876 13.707c-.003 2.976.003 5.952-.007 8.928-.004 1.325-.472 2.202-2.009 2.199-1.613-.004-1.87-1.016-1.869-2.281.002-5.787-.001-11.573.018-17.36.005-1.355.679-2.167 2.087-2.24 1.704-.088 1.762 1.143 1.773 2.322.029 2.81.01 5.621.007 8.432z"/><path fill="#0D2F5C" d="M80.024 13.853c-.001 2.813.008 5.626-.004 8.439-.006 1.335.119 2.709-1.965 2.581-1.558-.096-1.921-.95-1.918-2.262.01-5.792.007-11.583.016-17.375.003-1.678 1.071-2.397 2.537-2.403 1.909-.008 1.277 1.585 1.306 2.582.082 2.81.028 5.625.028 8.438z"/><path fill="#092C5A" d="M88.993 15.023c-2.145-3.257.06-4.553 2.644-4.961 3.221-.51 7.453-1.903 8.277 3.159.568 3.493-.027 7.176-.103 10.775-2.102 1.148-3.597.029-5.026-1.337a2.326 2.326 0 0 1 .208-1.325c1.232-2.063.613-4.135-.013-6.197-.421-1.251-.905-2.201-2.203-.678-1.084 1.269-2.338 1.619-3.784.564z"/><path fill="#082A59" d="M15.81 15.952c-1.674.248-2.137-.558-1.747-2.015.525-1.96 1.483-3.712 3.003-5.068 1.75-1.563 3.668-2.95 6.172-2.715.721.067.749 1.019.568 1.653-.744 2.605-.261 5.895-3.648 7.086-1.4.493-2.896.714-4.348 1.059z"/><path fill="#4C9BCC" d="M27.31 6.134c2.078.659 4.104 1.477 5.45 3.267 1.34 1.783 3.732 4.159 1.729 5.924-1.693 1.491-4.827.104-6.805-1.342-2.023-1.479-1.753-4.171-2.228-6.399-.31-1.451.745-1.588 1.854-1.45z"/><path fill="#FED20B" d="M16.356 17.744c5.234.457 7.835 3.355 7.528 7.742-.125 1.789-1.077 1.713-2.33 1.535-3.117-.442-7.494-5.017-7.549-7.804-.047-2.43 1.574-1.44 2.351-1.473z"/><path fill="#797B7B" d="M25.797 24.259c.473-4.644 3.051-6.847 7.521-6.778 1.785.025 1.875.821 1.72 2.157-.359 3.091-5.106 7.535-7.887 7.45-2.415-.073-1.363-1.67-1.354-2.829z"/><path fill="#0C2E5C" d="M95.999 14.998c.915 2.334 2.14 4.681-.283 6.878-.752-.403-.234-2.08-1.453-1.719-.38.113.554 1.27.742 2.002 1.338 1.303 2.938 1.92 4.806 1.837-2.901 1.257-6.072 1.089-8.96.708-3.427-.451-3.654-3.754-.839-7.683 1.678-1.611 3.277-3.461 5.987-2.023z"/><path fill="#052857" d="M86.228 17.547c-.008 1.809.021 3.618-.019 5.427-.023 1.089-.43 1.857-1.733 1.866-1.27.008-1.816-.692-1.828-1.798-.04-3.782-.063-7.566.024-11.348.033-1.421 1.119-1.96 2.41-1.843 1.464.132 1.104 1.376 1.134 2.268.061 1.807.019 3.618.012 5.428zM67.31 17.653c-1.154 1.991 2.193 6.767-2.014 6.786-3.451.017-1.038-4.582-1.635-7.044-.34-1.402-.036-2.955-.063-4.438-.03-1.608.194-3.12 2.222-3.104 2.169.017 1.358 1.827 1.458 2.953.131 1.472.032 2.965.032 4.847z"/><path fill="#EBEBEB" d="M195.769 24.878l.402-11.907 1.029.133c.185 3.977 2.276 7.955-.005 11.93-.475-.052-.951-.103-1.426-.156z"/><path fill="#EEF5F9" d="M161.988 15.045c1.628.23 2.844-.01 3.236-1.997.243-1.229 1.229-2.004 2.576-1.351.505.245.987.868 1.153 1.417.466 1.539-.728 1.925-1.835 2.331-1.378.504-2.744 1.039-4.116 1.56l-1.014-1.96z"/><path fill="#E8EBEF" d="M95.999 14.998l-5.989 2.024-1.018-1.998c1.301.12 2.743.574 3.101-1.411.273-1.513 1.032-2.525 2.718-1.951 1.679.572 1.451 1.985 1.188 3.336z"/><path fill="#F1F3F5" d="M135.011 15.975c-1.867-.68-5.332-1.154-4.64-3.017 1.043-2.806 3.662.198 5.64.215l-1 2.802z"/><path fill="#F2F3F3" d="M187.897 14.948c.282-1.541.146-3.451 2.464-3.436.792.005 1.507.586 1.648 1.502.391 2.51-1.706 2.215-3.097 2.711l-1.015-.777z"/><path fill="#183864" d="M86.356 4.75c-.268 1.164-1.063 1.621-2.168 1.493-1.098-.127-1.874-.793-1.707-1.927.163-1.104 1.039-1.598 2.17-1.5 1.174.102 1.718.777 1.705 1.934z"/><path fill="#28466E" d="M65.281 6.358c-1.104-.126-1.957-.814-1.875-1.823.101-1.244 1.058-1.924 2.413-1.708 1.127.18 1.692.906 1.554 1.993-.147 1.148-1.037 1.511-2.092 1.538z"/><path fill="#F1F1F1" d="M204.211 18.203c-2.259.004-2.796-1.604-2.977-3.283-.19-1.762.343-3.632 2.39-3.602 1.921.028 2.55 1.843 2.645 3.612.084 1.564-.105 3.02-2.058 3.273z"/><path fill="#F9F9F9" d="M204.749 28.212c-1.602-.371-4.318.601-4.508-1.755-.207-2.571 2.446-1.539 3.788-1.415 1.907.176 5.07-1.349 5.393 1.482.207 1.821-2.871 1.446-4.673 1.688z"/><path fill="#E8E9E9" d="M205.065 20.154l3.896 1.613c-2.551.029-5.138.31-7.889-.734 1.459-1.519 2.776-.859 3.993-.879z"/><path fill="#F7FAFC" d="M167.132 22.073c-1.287-.02-2.188-.316-2.13-1.622.078-1.797 1.511-2.45 2.878-2.926 1.18-.41 1.206.676 1.266 1.45.124 1.629-.269 2.927-2.014 3.098z"/><path fill="#F9F9F9" d="M189.889 22.086c-1.104-.037-1.961-.396-1.872-1.691.124-1.793 1.565-2.557 2.943-2.861 1.52-.335 1.136 1.154 1.19 2.001.099 1.557-.639 2.469-2.261 2.551z"/><path fill="#F7FAFC" d="M149.707 13.523c1.878-2.286 3.321-1.866 5.423-.191-2.067 1.086-3.506.914-5.423.191z"/><path fill="#F4F6F8" d="M95.004 22.159c-1.227-.108-3 .433-3.047-1.508-.054-2.226 1.894-2.777 3.646-3.427 1.113 1.571.562 3.112.112 4.651-.3-.064-.537.029-.711.284z"/></g></svg>
+                    <img src="wlt-logo.png" alt="Williams Lea Tag is the leading independent global provider marketing services">
                 </a>
                 <h1>Global Production Studio</h1>
             </header>
@@ -117,9 +172,67 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
                 <a data-wlt-nav-state=""       aria-label="Contact">Contact</a>
             </nav>
 
-        </main>
-        <footer>
+            <section class="main-cols__grid">
+                <article>
+                    <aside class="nav__primary--cont">
+                        <section data-wlt-nav-state="active">
+                            <h2>Helping great companies create seamless customer experiences.</h2>
+                            <aside>
+                                <p>Cadence Centricity Claironic Clarity Versus Chaos Clever Clevorvoyant Clockwork Clevor Compel Consensus Contagious Context Convergence Conviction Convinced Copy Counter Clock Wise Customer Advocacy Customer Centricity Delta Orgin Depth Design is content not garish Digital Alchemy Directed Discerning Discoverability is crucial Elastic Electrokinetic propulsion ion wind Evoked Salesforce Customer Portal Application Syndication Resonance</p>
+                            </aside>
+                        </section>
+                        <section>
+                            <h2>About the Global Production Studio</h2>
+                            <aside>
+                                <p>Influencer - Ground Breaker - Early Adopter - Rule Breaker - Inspirer - Visionary - Builder – Activator – Opinion Maker – Innovator – Doer Informative, In-Depth, Indispensable. Ingenuity Insight > Idea > Impact Inspirational Inspire Instant Gratification Integral Interactivity is the Active Ingredient use rich media to entertain or provide interaction. Intriguing Invest in Easy to Use Is anybody out there? It creates a resonance in the mind of the Audience that helps establish mood, feeling, and emotion. It plays with our subconscious in ways that can achieve a connection with the reader deeper then emotioning. James, you ought to discover some day that words have an exact meaning. Kalidascope Keiretsu Knowtify Me Language Leap</p>
+                            </aside>
+                        </section>
+                        <section>
+                            <h2>Services | Creative Production | Our Approach</h2>
+                            <aside>
+                                <p>Lineage Linguistic Liquid Logicable Loyalty Origin Mardi Gras Merchandising Methodical Myoptic Zeal Ninjaneering Opinion Engineering Organic Organized is a way that lets you uncover meaningful trends that you can act upon. Originality Ornate Our product design is a hybrid of ingenuity and simplicity</p>
+                            </aside>
+                        </section>
+                        <section>
+                            <h2>Portfoliio</h2>
+                            <aside>
+                                <p>Positively Post Digital Powerful Precisely Predictive Provements Quantifiable Quincunx Quintessence Rainmaker Rearden metal Refreshest Remarkably Meticulous Respite Lounge Rethink Renew Rejoice Rhythmic Savoir faire Shape Show and Tell Sociotechnical Steadfast Sticky Stradivarius</p>
+                            </aside>
+                        </section>
+                        <section>
+                            <h2>Contact</h2>
+                            <aside>
+                                <p>A veritable avalanche actionable aesthetic agile an appropriate application of ingenuity apex architecture aspect assertive authoritative brittle application architecture that's not flexible cannonical cause change circadian rhythms of arousal and rest circumvent clairvoyant cognate cohesion combined to form something greater than the sum of its parts compulsive concept contemporary contrast convection cornerstone credentials credibility criterion critical clarity critical mass customer centricity.</p>
+                            </aside>
+                        </section>
+                    </aside>
+                    <aside class="nav__secondary--cont">SECONDARY TABS</aside>
+                </article>
+                <aside class="find-a-studio">
+                    <h3>Find a Local Production Studio</h3>
+                    <p>Select a Country and City.</p>
+                </aside>
+            </section>
 
-        </footer>
+        </main>
+
+        <script>
+            "use strict";
+            function DoPrimNav( dc, queryNav, queryCnt ){  //  Mutually exclusive tab / accordion pattern
+                let nCount = 0; 
+                let aPrimC = [].slice.call( dc.querySelectorAll( queryCnt ) );
+                let aPrimA = [].slice.call( dc.querySelectorAll( queryNav ) ).filter(function( el ){
+                    el.dataset.wltNavOrder = nCount++;                    
+                    el.addEventListener("click", function( ev ){  //  On click hide and show content
+                        aPrimC.filter(function( e ){ e.dataset.wltNavState = ""; });
+                        aPrimC[ this.dataset.wltNavOrder ].dataset.wltNavState = "active";
+                        aPrimA.filter(function( e ){ e.dataset.wltNavState = ""; });
+                        this.dataset.wltNavState = "active";
+                    })
+                    return true;
+                } );
+            };
+            DoPrimNav( document, ".nav__primary a", ".nav__primary--cont section" );
+        </script>
     </body>
 </html>
