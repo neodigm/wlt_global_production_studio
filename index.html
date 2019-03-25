@@ -180,7 +180,7 @@ html
 
     user-select: none;
 
-    grid-template-columns: repeat( auto-fill, minmax( 132px, 1fr ) );
+    grid-template-columns: repeat( auto-fill, minmax( 132px, 144px ) );
 }
 .nav__secondary a
 {
@@ -246,6 +246,8 @@ html
 
     border-radius: 6px 24px;
     background-image: linear-gradient(to bottom, #f1f1f1 0%,#dcdddd 76%);
+
+    min-height: 256px;
 }
 .sel-drop
 {
@@ -385,7 +387,7 @@ html
         <script>
             "use strict";
             let dc = document;
-            let oLoca = {"United States":["Chicago", "New Orleans", "St. Louis","Savannah"],"Italia":["Rome 🇮🇹","Venise","Florence","Naples"],"Deutschland":["Berlin","Hamburg","Munich"]};
+            let oLoca = {"United States":["Chicago", "New Orleans", "St. Louis","Savannah"],"Italia":["Rome","Venise","Florence","Naples"],"Deutschland":["Berlin","Hamburg","Munich"]};
             function DoTabNavigation( dc, queryNav, queryCnt ){  //  Mutually exclusive tab / accordion pattern
                 let nCount = 0; 
                 let aPrimC = [].slice.call( dc.querySelectorAll( queryCnt ) );
