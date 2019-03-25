@@ -45,7 +45,7 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
     }
     body::-webkit-scrollbar-track
     {
-        background: rgba(97,73,3,.2);
+        background: rgba(56, 132, 237,.4);
     }
     body::-webkit-scrollbar-thumb
     {
@@ -71,6 +71,7 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
     .h__brand-lblue--1  {background-color: #4c9bcc;}
     .h__brand-dblue--1  {background-color: #082a59;}
     .h__brand-gray--1   {background-color: #7c7e7e;}
+    .h_hide { display: none }
 
     /* Logo Container */
     .lgo__head {
@@ -123,6 +124,7 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
     .nav__primary--cont {
         padding: 8px;
         margin: 4px;
+        min-height: 256px;
     }
     .nav__primary--cont section:not( [data-wlt-nav-state|=active] ) {
         display: none;
@@ -133,6 +135,51 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
         margin: 0;
         padding: 0 4px;
     }
+
+    .nav__secondary {
+        display: grid;
+        grid-template-columns: repeat( auto-fill, minmax( 176px, 1fr ) );
+        user-select: none;
+        margin: 0 11px;
+    }
+    .nav__secondary a {
+        color: #fff;
+        background: linear-gradient(to bottom, #5cabdc 0%,#3c8bbc 76%);
+        border-right: solid 2px #fff;
+        border-radius: 12px 12px 0px 0px;
+        cursor: pointer;
+        font-size: 17px;
+        line-height: 1.6;
+        margin: 0;
+        padding: 4px 16px;
+        text-align: center;
+    }
+    .nav__secondary a:hover {
+        background: linear-gradient(to bottom, #3c8bbc 0%,#5cabdc 76%);
+    }
+    .nav__secondary a[data-wlt-nav-state|=active]  {
+        background: linear-gradient(to bottom, #ffe21b 0%,#eec200 76%);
+        color: #082a59;
+    }
+    .nav__secondary a[data-wlt-nav-state|=active]:hover  {
+        background: linear-gradient(to bottom, #eec200 0%,#ffe21b 76%);
+    }
+
+    .nav__secondary--cont {
+        padding: 0 6px 6px 6px;
+        margin: 0 4px 4px 4px;
+        min-height: 256px;
+    }
+    .nav__secondary--cont section:not( [data-wlt-nav-state|=active] ) {
+        display: none;
+    }
+    .nav__secondary--cont aside {
+        border: solid 1px #ddd;
+        border-radius: 0 24px;
+        margin: 0;
+        padding: 0 4px;
+    }
+
     .main-cols__grid {
         display: grid;
         grid-template-columns: 66% 1fr;
@@ -144,6 +191,18 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
         padding: 4px 24px;
         margin: 76px 16px 4px 4px;
     }
+    .sel-drop {
+        width: 44%;
+        height: 38px;
+        font-size: 18px;
+        color: #444;
+        border-radius: 6px;
+        padding: 4px;
+        margin: 2px auto;
+    }
+    .twt-cont {
+        margin: 0 auto;max-width: 500px;
+    }
 
     @media only screen and (max-width:48em)
     {
@@ -153,8 +212,15 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
         .lgo__head h1 {
             margin-left: 2px;
         }
+        .main-cols__grid {
+            display: block;
+        }
+        .find-a-studio {
+            margin: 8px;
+        }
     }
         </style>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </head>
     <body>
         <main>
@@ -206,11 +272,45 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
                             </aside>
                         </section>
                     </aside>
-                    <aside class="nav__secondary--cont">SECONDARY TABS</aside>
+                    <aside>
+                        <nav class="nav__secondary">
+                            <a data-wlt-nav-state="active" aria-label="Services">Our Services</a>
+                            <a data-wlt-nav-state=""       aria-label="Solutions">Our Solutions</a>
+                        </nav>
+                        <section class="nav__secondary--cont">
+                            <section data-wlt-nav-state="active">
+                                <aside>
+                                    <h2>Our Services</h2>
+                                    <div class="twt-cont">
+                                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">25% of <a href="https://twitter.com/hashtag/pharmaceutical?src=hash&amp;ref_src=twsrc%5Etfw">#pharmaceutical</a> product launches fail to reach even half of external revenue forecasts!<br>Read our eBook in association with <a href="https://twitter.com/pharmaphorum?ref_src=twsrc%5Etfw">@pharmaphorum</a> to find out how to prepare a successful launch strategy in the rapidly changing market: <a href="https://t.co/HG0xIgRmPU">https://t.co/HG0xIgRmPU</a> <a href="https://twitter.com/hashtag/Digital?src=hash&amp;ref_src=twsrc%5Etfw">#Digital</a> <a href="https://twitter.com/hashtag/Marketing?src=hash&amp;ref_src=twsrc%5Etfw">#Marketing</a> <a href="https://t.co/Cghw1ii7Xr">pic.twitter.com/Cghw1ii7Xr</a></p>&mdash; Williams Lea Tag (@williamsleatag) <a href="https://twitter.com/williamsleatag/status/1024694875651039232?ref_src=twsrc%5Etfw">August 1, 2018</a></blockquote>
+                                    </div>
+                                </aside>
+                            </section>
+                            <section>
+                                <aside>
+                                    <h2>Our Solutions</h2>
+                                    <div class="twt-cont">
+                                        <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">58% of retailers use online influencers as part of their brand activation strategy but only 30% are happy with the results. <br>Read about this and other trends shaping <a href="https://twitter.com/hashtag/retail?src=hash&amp;ref_src=twsrc%5Etfw">#retail</a> <a href="https://twitter.com/hashtag/marketing?src=hash&amp;ref_src=twsrc%5Etfw">#marketing</a> in our latest blog post: <a href="https://t.co/Jbh4PjYLxR">https://t.co/Jbh4PjYLxR</a> <a href="https://twitter.com/hashtag/FMCG?src=hash&amp;ref_src=twsrc%5Etfw">#FMCG</a> <a href="https://twitter.com/hashtag/Brand?src=hash&amp;ref_src=twsrc%5Etfw">#Brand</a> <a href="https://twitter.com/hashtag/InfluencerMarketing?src=hash&amp;ref_src=twsrc%5Etfw">#InfluencerMarketing</a> <a href="https://t.co/6B8B7v2BDK">pic.twitter.com/6B8B7v2BDK</a></p>&mdash; Williams Lea Tag (@williamsleatag) <a href="https://twitter.com/williamsleatag/status/1026458938127134720?ref_src=twsrc%5Etfw">August 6, 2018</a></blockquote>
+                                    </div>
+                                </aside>
+                            </section>
+                        </section>                        
+                    </aside>
                 </article>
                 <aside class="find-a-studio">
                     <h3>Find a Local Production Studio</h3>
                     <p>Select a Country and City.</p>
+                    <br>
+                    <select class="js-country sel-drop">
+                        <option>Select Country</option>
+                        <option>Deutschland</option>
+                        <option>Italia</option>
+                        <option>United States</option>
+                    </select>
+                    <br><br>
+                    <select class="js-city sel-drop h_hide">
+                        <option class="js-city__opt">Select City</option>
+                    </select>
                 </aside>
             </section>
 
@@ -218,7 +318,9 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
 
         <script>
             "use strict";
-            function DoPrimNav( dc, queryNav, queryCnt ){  //  Mutually exclusive tab / accordion pattern
+            let dc = document;
+            let oLoca = {"United States":["Chicago", "New Orleans", "St. Louis","Savannah"],"Italia":["Rome","Venise","Florence","Naples"],"Deutschland":["Berlin","Hamburg","Munich"]};
+            function DoTabNavigation( dc, queryNav, queryCnt ){  //  Mutually exclusive tab / accordion pattern
                 let nCount = 0; 
                 let aPrimC = [].slice.call( dc.querySelectorAll( queryCnt ) );
                 let aPrimA = [].slice.call( dc.querySelectorAll( queryNav ) ).filter(function( el ){
@@ -232,7 +334,25 @@ ____/ // /__ / /_/ / /_ / /_      / /_____       _  /| | _  /   / /_/ // /_/ /_(
                     return true;
                 } );
             };
-            DoPrimNav( document, ".nav__primary a", ".nav__primary--cont section" );
+            DoTabNavigation( document, ".nav__primary a", ".nav__primary--cont section" );
+            DoTabNavigation( document, ".nav__secondary a", ".nav__secondary--cont section" );
+            //  Drop-down logic | Country then City
+            dc.getElementsByClassName("js-country")[0].addEventListener("change", function( ev ){
+                let sCity = dc.getElementsByClassName("js-city")[0];
+                if( this.value === "Select Country" ){
+                    sCity.classList.add( "h_hide" );
+                }else{
+                    sCity.classList.remove( "h_hide" );
+                    [].slice.call( dc.querySelectorAll( ".js-city option" ) ).filter( function( e ){
+                        e.outerHTML = "";  //  Remove existing cities
+                    });
+                    oLoca[ this.value ].filter( function( city ){
+                        let eOpt = document.createElement("option");
+                        eOpt.innerHTML = city;
+                        sCity.appendChild( eOpt );
+                    });
+                }
+            });
         </script>
     </body>
 </html>
