@@ -1,4 +1,4 @@
-# WLT Global Production Studio Web Dev Test 
+# WLT Global Production Studio Web Dev Challenge 
 Scott C. Krause ⚡️ 25 March 2019
 -
 About this deliverable:
