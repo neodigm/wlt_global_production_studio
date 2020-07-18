@@ -17,14 +17,6 @@ DESKTOP
 
 https://neodigm.github.io/wlt_global_production_studio/
 
-MOBILE
-
-http://quirktools.com/screenfly/#u=https%3A//neodigm.github.io/wlt_global_production_studio/&w=414&h=736&a=37&s=1
-
-TABLET
-
-http://quirktools.com/screenfly/#u=https%3A//neodigm.github.io/wlt_global_production_studio/&w=1024&h=768&a=22&s=1
-
 ---
 ![](https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9)
 #
