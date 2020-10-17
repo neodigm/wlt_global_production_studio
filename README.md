@@ -17,8 +17,6 @@ DESKTOP
 
 https://neodigm.github.io/wlt_global_production_studio/
 ---
-![](https://repository-images.githubusercontent.com/178555357/2b6ad880-7aa0-11ea-8dde-63e70187e3e9)
-
 #
 [Portfolio Blog](https://www.theScottKrause.com) |
 [🚀 Résumé](https://thescottkrause.com/Arcanus_Scott_C_Krause_2020.pdf) |
