@@ -13,9 +13,9 @@ Code quality
 
 No frameworks used. Twitter API is the only external dependency.
 
-DESKTOP
+[Desktop Prototype]()
 
-https://neodigm.github.io/wlt_global_production_studio/
+
 ---
 #
 [Portfolio Blog](https://www.theScottKrause.com) |
