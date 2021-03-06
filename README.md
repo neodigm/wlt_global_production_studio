@@ -13,6 +13,8 @@ Code quality
 
 No frameworks used. Twitter API is the only external dependency.
 
+
+[Mobile Prototype](https://thescottkrause.com/utils/neodigm55-mobile-resizer/?vp=m&uri=https://neodigm.github.io/wlt_global_production_studio/)
 [Desktop Prototype](https://neodigm.github.io/wlt_global_production_studio/)
 
 
