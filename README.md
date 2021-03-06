@@ -6,10 +6,10 @@ About this deliverable:
 
 Code quality
 - *Maintainable* - Easy to read, modify, reason about, change and reuse. BEM naming conventions.
-- Performant - Fast, above the fold. Does not cause document reflow. Does not require excess  HTTP requests.
-- Secure - Safe from XSS. Does not eval user provided content. No mixed content.
-- Accessible - Meets applicable WCAG 2.0 Success criteria
-- Discoverable - Meets SEO and SMM best practices
+- *Performant* - Fast, above the fold. Does not cause document reflow. Does not require excess  HTTP requests.
+- *Secure* - Safe from XSS. Does not eval user provided content. No mixed content.
+- *Accessible* - Meets applicable WCAG 2.0 Success criteria
+- *Discoverable* - Meets SEO and SMM best practices
 
 No frameworks used. Twitter API is the only external dependency.
 
