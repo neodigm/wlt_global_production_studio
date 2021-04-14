@@ -34,7 +34,8 @@ No frameworks used. Twitter API is the only external dependency.
 [Twitter](https://twitter.com/neodigm24) |
 [Keybase](https://keybase.io/neodigm) |
 [Docker](https://hub.docker.com/u/neodigm) |
-[W3C](https://www.w3.org/users/123844)
+[W3C](https://www.w3.org/users/123844) |
+[InfoSec](https://arcanus55.medium.com/offline-vs-cloud-password-managers-51b1fbebe301)
 #
 
 
