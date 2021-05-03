@@ -4,7 +4,7 @@ Scott C. Krause ⚡️ 25 March 2019
 About this deliverable:
 -
 
-Code quality
+Code quality | 🚀 JavaScript && TypeScript && Go 🪐
 - *Maintainable* - Easy to read, modify, reason about, change and reuse. BEM naming conventions.
 - *Performant* - Fast, above the fold. Does not cause document reflow. Does not require excess  HTTP requests.
 - *Secure* - Safe from XSS. Does not eval user provided content. No mixed content.
