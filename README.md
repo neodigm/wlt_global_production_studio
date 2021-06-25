@@ -17,7 +17,6 @@ No frameworks used. Twitter API is the only external dependency.
 
 [Desktop Prototype](https://www.neodigm.github.io/wlt_global_production_studio/)
 
-🌑🌒🌓🌔🌕🌖🌗🌘🌑
 ---
 #
 [Portfolio Blog](https://www.theScottKrause.com) |
