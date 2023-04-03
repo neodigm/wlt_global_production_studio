@@ -9,7 +9,7 @@ Code quality | 🚀 JavaScript && TypeScript && Go 🪐
 - *Performant* - Fast, above the fold. Does not cause document reflow. Does not require excess  HTTP requests.
 - *Secure* - Safe from XSS. Does not eval user provided content. No mixed content.
 - *Accessible* - Meets applicable [WCAG 2.0](https://www.thescottkrause.com/tags/wcag/) Success criteria
-- *Discoverable* - Meets SEO and SMM best practices
+- *Discoverable* - Meets SEO, SMM and [Analytics]([https://www.thescottkrause.com/tags/wcag/](https://www.machfivemarketing.com/accelerators/google_analytics_ga4_migration/)) best practices
 
 No frameworks used. Twitter API is the only external dependency.
 
