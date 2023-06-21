@@ -24,6 +24,7 @@ No frameworks used. Twitter API is the only external dependency.
 [🦄 Résumé](https://thescottkrause.com/Arcanus_Scott_C_Krause_2023.pdf) |
 [UX micro-library](https://thescottkrause.com/emerging_tech/neodigm55_ux_library/) |
 [PWA WASM](https://www.thescottkrause.com/emerging_tech/curated-pwa-links/) |
+[DevToys](https://www.thescottkrause.com/devtoys/) |
 [Neodigm UX Wiki](https://github.com/arcanus55/neodigm55/wiki/Cheat-Sheet) | 
 [NPM](https://www.npmjs.com/~neodigm) |
 [Github](https://github.com/neodigm) |
@@ -37,10 +38,9 @@ No frameworks used. Twitter API is the only external dependency.
 [W3C](https://www.w3.org/users/123844) |
 [InfoSec](https://arcanus55.medium.com/offline-vs-cloud-password-managers-51b1fbebe301)
 #
-
 <p align="center">
 	  <a target="_blank" href="https://www.thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/">
-	  	<img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.webp" alt="TypeScript UX 🪐 Interactive Infographic ⚡ WASM ✨ PWA 🍭 Svelte 🚀 JavaScript && TypeScript && Go 🪐">
+	  	<img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.webp" alt="TypeScript UX 🪐 Interactive Infographic ⚡ WASM ✨ PWA 🍭 Svelte">
 	  </a>
 </p>
 
@@ -49,4 +49,3 @@ No frameworks used. Twitter API is the only external dependency.
     <img src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/thescottkrause_contact_card.png" title="UX PWA TypeScript ⚡ WASM ✨ Vue.js 🍭 ThreeJS" alt="Interactive Infographic">
   </a>
 </p>
-
