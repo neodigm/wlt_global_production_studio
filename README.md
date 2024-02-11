@@ -11,7 +11,7 @@ Code quality | 🚀 JavaScript && TypeScript && Go 🪐
 - *Accessible* - Meets applicable [WCAG 2.0](https://www.thescottkrause.com/tags/wcag/) Success criteria
 - *Discoverable* - Meets SEO, SMM and [Analytics]([https://www.thescottkrause.com/tags/wcag/](https://www.machfivemarketing.com/accelerators/google_analytics_ga4_migration/)) best practices
 
-No frameworks used. Twitter API is the only external dependency.
+No frameworks used. Twitter API is the only external dependency. MuleSoft 🌶️ Solid Start 🧲 TanStack Query
 
 [Mobile Prototype](https://www.thescottkrause.com/utils/neodigm55-mobile-resizer/?vp=m&uri=https://neodigm.github.io/wlt_global_production_studio/)
 
