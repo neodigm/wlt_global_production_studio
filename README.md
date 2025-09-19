@@ -1,5 +1,5 @@
 # WLT Global Production Studio Web Dev Challenge 
-MuleSoft 🌶️ Solid Start 🧲 TanStack Query
+AI Agents Chat UX PWA 3D Lit ThreeJS Vue ✨HTMX Rust WASM
 ✨ Azure Playwright && JavaScript && TypeScript && Go 🪐
 
 Scott C. Krause ⚡️ 25 March 2019
