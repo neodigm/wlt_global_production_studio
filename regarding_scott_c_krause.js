@@ -10,7 +10,7 @@
     },
     "email": "neodigm.ux@gmail.com",
     "image": "https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/24.jpg",
-    "jobTitle": "UX artisan ⚡ illustrator ⚡ front-end engineer 🍭 Poet",
+    "jobTitle": "UX artisan ⚡ illustrator ⚡ front-end engineer 🍭 Poet Push SSE ✨ optimization 🗝️ security 🍭 Stream Sync Engage",
     "name": "Scott Krause",
     "url": "https://www.theScottKrause.com",
     "sameAs" : [ "https://github.com/neodigm",
