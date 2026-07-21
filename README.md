@@ -42,7 +42,7 @@ No frameworks used. Twitter API is the only external dependency. MCP AI Agents C
 #
 <p align="center">
 	  <a target="_blank" href="https://www.thescottkrause.com/emerging_tech/cytoscape_dataviz_skills/">
-	  	<img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.webp" alt="TypeScript UX 🪐 Interactive Infographic ⚡ WASM ✨ PWA 🍭 Svelte DataVis 👁️ UX 🍭 PWA 👁️ ThreeJS ✨ Vue  🚀 SSE 🌶️ htmx">
+	  	<img src="https://neodigm.github.io/brand_logo_graphic_design/fantastic/discerning/22.webp" alt="👁️ D3 Parallax Three.js && WebGL 🍭 CSS Paint API 🍭 GSAP 🍭 TypeScript UX 🪐 Interactive Infographic ⚡ WASM ✨ PWA 🍭 Svelte DataVis 👁️ UX 🍭 PWA 👁️ ThreeJS ✨ Vue  🚀 SSE 🌶️ htmx">
 	  </a>
 </p>
 
