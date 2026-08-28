@@ -48,6 +48,6 @@ No frameworks used. Twitter API is the only external dependency. MCP AI Agents C
 
 <p align="center">
   <a target="_blank" href="https://www.thescottkrause.com">
-    <img src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/thescottkrause_contact_card.png" title="UX PWA MuleSoft 🌶️ Solid Start 🧲 TanStack Query ⚡ WASM ✨ Vue.js 🍭 ThreeJS 🌶️ HTMLX" alt="Interactive Infographic">
+    <img src="https://neodigm.github.io/pan-fried-monkey-fisticuffs/thescottkrause_contact_card.png" title="UX PWA MuleSoft 🌶️ Solid Start 🧲 TanStack Query ⚡ WASM ✨ Vue.js 🍭 ThreeJS 🌶️ HTMLX" alt="Interactive Infographic PEGA 🌶️ Rust WASM ⚡ Life Sciences ✨ Cloud Vercel">
   </a>
 </p>
